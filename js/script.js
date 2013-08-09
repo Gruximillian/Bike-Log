@@ -10,5 +10,5 @@
         headerImage.style.backgroundImage = " url( " + imageArray[imageIndex] + " ) ";
     }
 
-    setInterval(changeImage, 5000);
+    setInterval(changeImage, 10000);
 }());
