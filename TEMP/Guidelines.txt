@@ -1,0 +1,22 @@
+BIKE DNEVNIK GUIDELINES:
+
+1. Identitet: 
+	- Jasno se vidi da je to dnevnik za biciklisticke voznje
+	- Nagovestava stil biciklizma (mtb uglavnom, avanturisticki, hobi, ne trening)
+
+2. Features:
+	+ Tabelarni prikaz voznji u kalendaru, po mesecima (home page)
+	+ Prikaz zadnjeg unosa ispod/iznad kalendara na home strani
+	+ Prva sledeca najava (sidebar)
+	+ Pregled pojedinacne voznje (ako je izvodljivo lightbox sa navigacijom i kratkim opisom ture i linkom za novu stranu sa detaljnijim opisom)
+	- Visekorisnicki interfejs, login opcija
+	+ Dugme za dodavanje unosa u dnevnik (prisutno na svim stranama, za ulogovane)
+	+ Strana za pretragu i dodavanje unosa u dnevnik (Dnevnik)
+	- Razna statistika za voznju (po mogucnosti)
+	- Interaktivna mapa, sa trekom i mogucnoscu za download treka
+	+ Foto galerija bazirana na unosima sa voznje
+	- Pretrazivanje po delu imena ture, po distanci, po drugim podacima... videti sta
+	- Kontrol tabla za svakog korisnika, podesavanja, osnovni podaci itd.
+	- Najave tura, kalendarski prikazano, kao i dnevnik
+	- Mogucnost obavestavanja za najave po odredjenom kriterijumu (ko najavljuje, gde se ide, duzina voznje, mtb, drum, koliki je uspon, vreme... what ever), RSS mozda
+

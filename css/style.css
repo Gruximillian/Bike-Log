@@ -1,0 +1,423 @@
+/* RESET STILOVA ZA CEO DOKUMENT */
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	font: 14px/1.4 Georgia, serif;
+	}
+
+article, aside, figure, footer, header, nav, section {
+	display: block;
+	}
+	
+a {
+	text-decoration: none;
+	color: #454640;
+	}
+	
+a:hover {
+	text-decoration: underline;
+	}
+	
+/* KRAJ RESET BLOKA */
+
+html {
+	background: #454640 url(../images/background_noise.png);
+	}
+
+/* WRAPER ZA STRANU, CEO HTML IZMEDJU body TAGOVA */
+
+#page-wrap {
+	position: relative;
+	max-width: 800px;			/* NORMALNO */
+	/* width: auto !important;		/* DA BI MOGLO DA SE MENJA AKO TREBA PRI RESIZE */
+	/* width: 800px;				/* ZBOG IE ... OVO TRETIRA KAO min-height */
+	margin: 20px auto;
+		left: 0;		/* OVO POSTOJI KAKO BI APSOLUTNO POZICIONIRAN */
+		right: 0;		/* ELEMENT BIO CENTRIRAN SA "margin: auto"    */
+	background-color: #c4c2c2;
+	-moz-box-shadow:    0px 0px 15px 7px #000;
+	-webkit-box-shadow: 0px 0px 15px 7px #000;
+	box-shadow:         0px 0px 15px 7px #000;
+	}
+
+/* WRAPER ZA SADRZAJ ISPOD header DELA */
+
+#content-wrap {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+	}
+	
+.group:after {			/* OVO PROSIRUJE KOLAPSIRANI DIV ELEMENT KOJI	   */
+	content: "";		/* SADRZI FLOATING ELEMENTE, #content-wrap ELEMENT.*/
+	display: table;		/* KLASU group TREBA STAVITI U PARENT ELEMENT,	   */
+	clear: both;		/* KOJI KOLAPSIRA, DA BI SE TO SPRECILO, TEHNIKA SE*/
+	}					/* ZOVE "clearfix"								   */
+
+/* CSS ZA header DEO */
+
+header {
+	background: #454640 url(../images/header_image1.jpg);
+	background-repeat: no-repeat;
+	height: 170px;
+	position: relative;
+	/*border: 1px solid black; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+
+h1 {
+	float: right;
+	margin-top: -10px;
+	margin-right: 25px;
+		/* transparency for all browsers */
+		zoom: 1;
+		filter: alpha(opacity=30);
+		opacity: 0.4;
+		/* end transparency */
+	/*border: 1px solid teal; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+	
+h1 a, h1 a:hover {
+	font: italic bold 3em 'Comic Sans MS';
+	color: #fdd;
+	text-shadow: -5px 5px 1px #000;
+	text-decoration: none;
+	}
+
+#menu-base {
+	position: absolute;
+	width: 100%;
+	height: 1.5em;
+	background: #454640;
+		/* transparency for all browsers */
+		zoom: 1;
+		filter: alpha(opacity=80);
+		opacity: 0.8;
+		/* end transparency */
+	bottom: 0;
+	z-index: 100;
+	}
+
+ul {
+	list-style: none;
+	}
+
+nav ul {
+	position: relative;
+	}
+
+nav ul li {
+	display: inline;
+	}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 3px;
+}
+
+nav ul li a:hover {
+	color: #eb2;
+	}
+
+nav ul li a:visited {
+	color: #ccc;
+	}
+
+nav {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	z-index: 200;
+	width: 97%;
+		left: 0;	/* OVO POSTOJI KAKO BI APSOLUTNO POZICIONIRAN */
+		right: 0;	/* ELEMENT BIO CENTRIRAN SA "margin: auto"    */
+	margin: 0 auto;
+	/*border: 1px solid white; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+	
+/* DROPDOWN MENU TESTING */
+	
+		.menu li a {
+			display: inline-block;
+			}
+
+		.sub-menu, .sub-menu-1 {
+			position: relative;
+			white-space: nowrap;
+			}
+			
+		li.sub-menu ul, li.sub-menu-1 ul {
+			display: inline-block;
+			position: absolute;
+			min-width: 100%;
+			background-color: #454640;
+			visibility: hidden;
+
+			}
+			
+		li.sub-menu ul li {
+			border: 1px dotted gray;
+			border-top: none;
+			}
+			
+		li.sub-menu ul {
+			top: 1.3em;
+			left: 0;
+			}
+			
+		li.sub-menu-1 ul {
+			top: 0;
+			left: 100%;
+			}
+	
+		li.sub-menu ul li, li.sub-menu ul li a {
+			display: block;
+			padding: 3px 3px;
+			}
+			
+		.sub-menu:hover > a {
+			background-color: #888;
+			}
+	
+		li.sub-menu:hover > ul, li.sub-menu-1:hover > ul {
+			visibility: visible;
+			opacity: 0.9;
+			-moz-box-shadow: 0px 0px 15px 7px #000;
+			-webkit-box-shadow: 0px 0px 15px 7px #000;
+			box-shadow: 4px 4px 5px 0px #000;
+			}
+			
+		li.sub-menu ul li:hover {
+			background-color: #000;
+			transition: background-color 200ms ease-out 0.1s;
+			}
+
+/* END DROPDOWN MENU TESTING */
+
+#signup {
+	position: absolute;
+	right: 0;
+	}
+	
+/* KRAJ header DELA */
+
+
+
+/* CSS ZA aside DEO */
+
+aside {
+	right: 0;
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	background-color: #454640;
+	border-left: 1px solid black;
+	overflow: auto;
+	color: #c4c2c2;
+	z-index: 400; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+	
+aside a {
+	color: #c4c2c2;
+	}
+
+.widget {
+	margin: 0 0 20px 0;
+	position: relative;
+	text-align: left;
+	}
+
+.widget-content {
+	padding-left: 15px;
+	}
+
+.widget h3 {
+	background-color: #666;
+	min-height: 2em;			/* NORMALNO */
+	height: auto !important;	/* DA BI MOGLO DA SE MENJA AKO TREBA PRI RESIZE */
+	height: 2em;				/* ZBOG IE ... OVO TRETIRA KAO min-height */
+	padding-right: 15px;
+	margin-bottom: 10px;
+	text-align: right;
+	letter-spacing: 3px;
+	font-style: italic;
+	}
+	
+#total ul {
+	line-height: 2em;
+	letter-spacing: 2px;
+	}
+	
+/* KRAJ ZA aside DEO */
+
+
+
+/* CSS ZA GLAVNI SADRZAJ STRANE */
+
+#main-content {
+	position: relative;
+	float: left;
+	width: 75%;
+	background-color: #c4c2c2; /* c4c2c2 */
+	color: #454640;
+	/* border: 1px solid black; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+
+.date {						/* KORISTI SE I U aside DELU, NIJE MNOGO BITNO */
+	font: 1.5em Impact;
+	letter-spacing: 3px;
+	text-align: left;
+	display: block;
+	/* border: 1px solid black; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+
+#home-latest {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 20px 0 20px;
+	/* border: 1px solid black; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	/* z-index: 500; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+	
+#home-latest p {
+	line-height: 1.2em;
+	}
+	
+#home-latest .date {
+	text-align: center;
+	color: #000;
+	}
+
+#home-tabela {
+	position: relative;
+	margin: auto;
+	padding: 20px;
+	/* border: 1px solid black; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	/* z-index: 500; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+	
+h2, h2 a {
+	color: #000;
+	letter-spacing: 5px;
+	text-align: center;
+	margin: 0 0 10px 0;
+	background-color: #656660;
+	border-radius: 1em; 			/* FIREFOX, CHROMIUM, EPIPHANY */
+	-moz-border-radius: 1em;		/* KO ZNA ZASTO? */
+	-webkit-border-radius: 1em;		/* SAFARI, CHROMIUM, EPIPHANY */
+	-khtml-border-radius: 1em; 		/* for old Konqueror browsers */
+	/* border: 1px solid black; 	/* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+
+#home-latest img {
+	position: relative;
+	display: inline;
+	/*width: 300px;*/
+	margin: 15px 50px 20px 15px;
+	border: 1px solid #000;
+	-moz-box-shadow:    0px 0px 8px 2px #000;
+	-webkit-box-shadow: 0px 0px 8px 2px #000;
+	box-shadow:         0px 0px 8px 2px #000;
+	}
+
+#home-latest ul {
+	position: absolute;
+	top: 115px;
+	display: inline;
+	line-height: 2em;
+	letter-spacing: 2px;
+	}
+	
+#home-latest p {
+	border-bottom: 1px dashed #454640;
+	padding-bottom: 15px;
+	}
+	
+p .first-letter {
+	margin-left: 10px;
+	}
+	
+.first-letter, th {
+	font-size: 2em;
+	}
+
+table {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-collapse: collapse;
+	/* border: 1px solid black; /* ZBOG TESTIRANJA, FUNKCIONALNO NIJE POTREBNO */
+	}
+	
+th {
+	text-shadow: 2px 2px 3px #000;
+	}
+
+td {
+	height: 42px;
+	width: 5%;
+	font-family: Impact;
+	font-size: 1.8em;
+	border-right: 1px solid black;
+	}
+	
+td a {
+	background: url(../images/bike1.png) no-repeat;
+	display: block;
+	text-shadow: 3px 3px 2px #000;
+}
+
+td a:hover {
+	background-color: #555;
+	text-decoration: none;
+	color: #ccc;
+	transition: background-color 200ms ease-out 0s;
+	}
+
+td:nth-child(6), td:nth-child(7), td:nth-child(6) a, td:nth-child(7) a {
+	color: #c00;
+	}
+	
+td:nth-child(6) a:hover, td:nth-child(7) a:hover {
+	color: #c88;
+	}
+
+td:nth-child(7) {
+	border: none;
+	}
+
+/* KRAJ GLAVNOG DELA STRANE */
+
+
+
+
+/* CSS ZA FUTER - MOSTLY ZAVITLAVANJE */
+
+footer {
+	position: relative;
+	background-color: #555;
+	color: #fff;
+	opacity: 0.4;
+	max-width: 800px;
+	border-radius: 1em;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #000;
+	box-shadow: 0px 0px 10px 4px #000;
+	}
+	
+footer:hover {
+	box-shadow: 0px 0px 12px 4px #f00;
+	color: #000;
+	opacity: 0.7;
+	}
+	
+	
+/* KRAJ FUTERA */
+
+
