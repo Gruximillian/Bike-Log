@@ -62,6 +62,7 @@ html {
 
 header {
 	background: #454640 url(../images/header_image1.jpg);
+	background-size: 100% 100%; /* malo deformise sliku, ali to mu je */
 	background-repeat: no-repeat;
 	height: 170px;
 	position: relative;
